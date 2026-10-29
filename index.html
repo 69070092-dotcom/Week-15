@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🍜 Foodie — เมนูอาหารสุดอร่อย</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand">🍜 <span>Foodie</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">หน้าแรก</a></li>
+        <li><a href="#menu">เมนูอาหาร</a></li>
+        <li><a href="#featured">สุ่มเมนู</a></li>
+        <li><a href="#about">เกี่ยวกับเรา</a></li>
+      </ul>
+      <button class="btn btn-random" id="btnRandomNav">🎲 สุ่มเมนู</button>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <header class="hero" id="home">
+    <div class="hero-content container">
+      <span class="hero-tag">🍽️ ร้านอาหารสดใหม่ทุกวัน</span>
+      <h1>สุ่มเมนูอาหาร<br />ที่ชอบใน<strong>ทุกวัน</strong></h1>
+      <p class="hero-desc">
+        กดปุ่มสุ่มเลย! เราจะเอาเมนูอาหารสุ่มให้คุณทีละเมนู
+        ทั้งรูปภาพ ชื่อเมนู คำอธิบาย และราคา
+      </p>
+      <button class="btn btn-primary btn-lg" id="btnRandomHero">🎲 สุ่มเมนูอาหาร</button>
+    </div>
+  </header>
+
+  <!-- ==================== MENU SECTION ==================== -->
+  <section class="menu-section container" id="menu">
+    <h2 class="section-title">เมนูอาหารของร้าน</h2>
+    <p class="section-sub">กดที่เมนูอาหารเพื่อดูรายละเอียด · หรือกดปุ่มสุ่มเพื่อสุ่มรายการอาหาร</p>
+
+    <div class="menu-grid" id="menuGrid"></div>
+  </section>
+
+  <!-- ==================== FEATURED RANDOM DISPLAY ==================== -->
+  <section class="featured-section container" id="featured">
+    <div class="featured-card" id="featuredCard">
+      <div class="featured-img-wrap">
+        <img id="featuredImg" src="" alt="" />
+      </div>
+      <div class="featured-info">
+        <span class="featured-category" id="featuredCategory">อาหารตามสั่ง</span>
+        <h3 id="featuredName">เมนูอาหาร</h3>
+        <p id="featuredDesc">คำอธิบายเมนูอาหารนี้จะแสดงที่นี่</p>
+        <div class="featured-footer">
+          <span class="featured-price" id="featuredPrice">฿ 0</span>
+          <button class="btn btn-primary" id="btnRandomFeatured">🎲 สุ่มเมนูใหม่</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <footer class="footer" id="about">
+    <div class="container">
+      <h3>🍜 Foodie</h3>
+      <p>ร้านอาหารสดใหม่ · สุ่มให้คุณความทรงจำอร่อย ๆ</p>
+      <p class="footer-small">© 2026 Foodie — All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
